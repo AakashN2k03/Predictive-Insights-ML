@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-  "C:\Users\AAKASH\Desktop\2diseases\multiply disease pred.py"
+# -*- coding: utf-8 -*-  
 
 """
 Created on Mon Sep 11 09:50:57 2023
@@ -12,8 +12,8 @@ import numpy as np
 
 from streamlit_option_menu import option_menu
 
-jamboree_mod=pickle.load(open('C:/Users/AAKASH/Desktop/2diseases/models/jamboree.sav','rb'))
-sugar_mod=pickle.load(open('C:/Users/AAKASH/Desktop/2diseases/models/sugar.sav','rb'))
+jamboree_mod=pickle.load(open('path of your model','rb'))
+sugar_mod=pickle.load(open('path of your model','rb'))
 
 with st.sidebar:
     selected=option_menu('LINEAR and CLASSIFICATION PROJECT WITH ML',
@@ -24,7 +24,7 @@ with st.sidebar:
 
 if selected == 'jamboree probability prediction':
     st.title('Jamboree probability prediction using ml')
-    scaler = pickle.load(open('C:/Users/AAKASH/Desktop/2diseases/models/scaler.pkl', 'rb'))
+    scaler = pickle.load(open('path of your model', 'rb'))
     
     
     st.markdown("<b>Jamboree is an organization used to select the university in abroad by the marks obtained by the students and provide consultancy", unsafe_allow_html=True)
