@@ -4,7 +4,7 @@ Created on Sun Dec 31 08:38:27 2023
 
 @author: AAKASH
 """
-#C:/Users/AAKASH/Desktop/intern_ml/crude-oil-price.csv
+
 
 import pandas as pd
 import numpy as np
