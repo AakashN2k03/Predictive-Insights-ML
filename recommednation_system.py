@@ -34,7 +34,7 @@ def recommend_hotels(country_name):
         return None
 
 # Load the hotel data
-hotel_df1 = pd.read_csv('C:/Users/AAKASH/Desktop/Recommendation_system/Hotel_details.csv')
+hotel_df1 = pd.read_csv('path of your csv file')
 hotel_df = hotel_df1.head(10000)
 
 # Fill missing values
